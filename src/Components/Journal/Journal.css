@@ -1,0 +1,222 @@
+.journal-css{
+    font-family: 'Poppins';
+
+    margin: 0%;
+    background-color : #8cc08c ;
+
+.header{
+    position: sticky;
+    top:0;
+    z-index: 10;
+    background-color: #fff;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.nav{
+    background-color : #fff ;
+    display:flex;
+    position:static;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.nav img{
+    width: 150px;
+}
+
+.nav ul{
+    overflow: auto;
+    display: flex;
+}
+
+.nav ul li{
+    list-style: none;
+    margin: 4px 45px;
+}
+
+.nav li a{
+    padding: 3px 3px;
+    font-size: 15px;
+    text-decoration: none;
+    color: green;
+}
+
+@keyframes background {
+    from {
+      background-position: 0 0%;
+    }
+    to {
+      background-position: 0 -200px;
+    }
+  }
+
+  .first{
+    align-items: center;
+    justify-items: center;
+    background : #8cc08c ;
+    padding-bottom: 50px;
+  }
+
+  .title{
+    padding-top: 40px;
+    display: flex;
+  }
+
+  .title img{
+    padding-left: 10px;
+    height: 180px;
+  }
+
+  .title h1 {
+    padding-left: 70px;
+    color: #F2F5FE;
+    text-align: center;
+    font-size: 80px;
+    line-height: 1;
+    background: -webkit-linear-gradient(transparent, transparent), url(http://html5book.ru/wp-content/uploads/2016/08/bubbles.png) repeat;
+    background-size: 200px auto;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: background 10s infinite linear;
+  }
+  .content{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .content p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .section-content__button-wrapper {
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.section-content__button-wrapper img{
+    height:200px;
+}
+@media (max-width: 480px){
+.section-content__button-wrapper {
+    grid-template-columns: 1fr ;
+    width: 100%;
+    gap: 10px;
+}}
+.section-content__button-wrapper {
+    display: grid;
+    grid-gap: 1.3em;
+    max-width: 100%;
+    width: fit-content;
+}
+
+*, :before, :after {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0;
+    border-color: rgb(var(--text-color) / .12);
+}
+
+.button--custom-primary {
+    color: green;
+    border-color: #fff;
+    background-color: #fff;
+}
+.btn--custom {
+    text-decoration: none;
+    font-size: 15px;
+    position: relative !important;
+    padding: 16px 32px !important;
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-radius: .5rem !important;
+    letter-spacing: .02em !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    line-height: calc(3px + 2ex + 3px);
+    cursor: pointer;
+}
+a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+}
+
+.second{
+    background : #fff ;
+    /* background-image: url("./img/Untitled_design__5_-removebg-preview.png"); */
+    height:600px;
+    --mask:
+            radial-gradient(34.99px at 50% calc(100% - 48px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+            radial-gradient(34.99px at 50% calc(100% + 18px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+        -webkit-mask: var(--mask);
+                /* mask: var(--mask); */
+}
+
+.container{
+    margin-left: 7rem;
+    /* margin: 100px; */
+    display:flex;
+    /* flex-wrap:wrap;
+    justify-content:center;
+    align-items: center; */
+    flex-wrap: nowrap;
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    margin-right: 100px ;
+    margin-left: 40px;;
+    width:300px;
+    height:400px;
+    background: #8cc08c;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 300px 0 50px rgba(0,0,0, .5);
+
+}
+
+.card:hover{
+    transform: perspective(2000p) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0, .5);
+}
+
+.card .imgBox{
+    position: relative;
+    height:400px;
+    width:300px;
+    border:1px solid #000;
+    transform-origin: left;
+    z-index:1;
+    transition: 1s;
+}
+
+.card:hover .imgBox{
+    transform: rotateY(-185deg);
+}
+
+.card .imgBox img{
+
+    position: absolute;
+    top:0;
+    left:0;
+    height:400px;
+    width:300px;
+    object-fit:cover;
+}
+
+.card .details{
+    position:absolute;
+    color:#fff;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    padding:20px;
+}}

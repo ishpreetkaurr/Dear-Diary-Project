@@ -1,0 +1,78 @@
+.marked-css{
+h1 {
+    color: #501c19;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.calendar {
+    width: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar__header {
+    background-color: #C87377;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar__body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.calendar__day {
+    padding: 10px;
+    border-bottom: 1px solid #FDD4D7;
+    cursor: pointer;
+}
+
+.marked {
+    background-color: #D38F8F;
+    color: #fff;
+}
+
+.arrow3 {
+    color: #501c19;
+    font-size: 20px; 
+}
+
+
+
+.next-button {
+    font-size: xx-large; 
+    color: #501c19;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.next-button-container{
+    display: flex;
+    justify-content: center;
+}
+
+#monthYear{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+}
+

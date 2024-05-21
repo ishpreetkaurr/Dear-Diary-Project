@@ -1,0 +1,58 @@
+   .counter {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .day-circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #ffe4b5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 45px;
+        font-weight: bold;
+        border: 2px solid #D38F8F;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+   
+    .arrow {
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 35px;
+        color: #501c19;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    .counter-heading {
+        color: #501c19;
+        font-size: 40px;
+    }
+    .next-button{
+        font-size: xx-large;
+        color: #501c19;
+    }
+
+    .counter-text{
+        font-size: 20px;
+        height: 20rem;
+        color: #501c19;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @media (max-width: 768px) {
+        .arrow {
+            font-size: 20px;
+        font-size: 14px;
+        }
+        .counter-heading {
+            font-size: 18px;
+        }
+    }

@@ -1,0 +1,66 @@
+h1 {
+    color: #501c19;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cal {
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Display months in a row */
+    justify-content: center; /* Center alignment */
+}
+
+.month {
+    width: 400px; /* Set width for each month */
+    margin: 13px; /* Add some spacing between months */
+}
+
+.calendar__header {
+    background-color: #C87377;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.calendar__body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    padding: 10px;
+}
+
+.cal__day {
+    padding: 10px;
+    border-bottom: 1px solid #FDD4D7;
+    cursor: pointer;
+}
+
+.marked {
+    background-color: #D38F8F;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .cal {
+        flex-direction: column; /* Display months in a column for smaller screens */
+    }
+    h1 {
+        color: #501c19;
+        font-size: 40px;
+        margin-bottom: 30rem;
+        text-align: center;
+    }
+    .month {
+        width: auto; /* Reset width for smaller screens */
+    }
+
+    .month:not(:last-child) {
+        margin-bottom: 30px; /* Add space between months vertically */
+    }
+}
